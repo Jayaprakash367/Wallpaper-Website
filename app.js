@@ -58,8 +58,30 @@ const WALLPAPERS = [
     { id: 47, title: "Ink Drop", category: "abstract", thumb: "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=600&q=80", full: "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=1920&q=90" },
     { id: 48, title: "Light Trails", category: "abstract", thumb: "https://images.unsplash.com/photo-1516796181074-bf453fbfa3e6?w=600&q=80", full: "https://images.unsplash.com/photo-1516796181074-bf453fbfa3e6?w=1920&q=90" },
     { id: 49, title: "Fractal Pattern", category: "abstract", thumb: "https://images.unsplash.com/photo-1550859492-d5da9d8e45f3?w=600&q=80", full: "https://images.unsplash.com/photo-1550859492-d5da9d8e45f3?w=1920&q=90" },
-    { id: 50, title: "Prism Colors", category: "abstract", thumb: "https://images.unsplash.com/photo-1557672172-298e090bd0f1?w=600&q=80", full: "https://images.unsplash.com/photo-1557672172-298e090bd0f1?w=1920&q=90" }
+    { id: 50, title: "Prism Colors", category: "abstract", thumb: "https://images.unsplash.com/photo-1557672172-298e090bd0f1?w=600&q=80", full: "https://images.unsplash.com/photo-1557672172-298e090bd0f1?w=1920&q=90" },
+   
+    { id: 51, title: "lamborghini", category: "Cars", thumb: "https://images.pexels.com/photos/3802510/pexels-photo-3802510.jpeg?_gl=1*2gik0i*_ga*NjA0NzY1MDE5LjE3Njk4Mzc3MDk.*_ga_8JE65Q40S6*czE3Njk5MTk1MDkkbzIkZzEkdDE3Njk5MTk1NjYkajMkbDAkaDA.", full: "https://images.pexels.com/photos/3802510/pexels-photo-3802510.jpeg?_gl=1*2gik0i*_ga*NjA0NzY1MDE5LjE3Njk4Mzc3MDk.*_ga_8JE65Q40S6*czE3Njk5MTk1MDkkbzIkZzEkdDE3Njk5MTk1NjYkajMkbDAkaDA." },
+    { id: 52, title: "lamborghini Red ", category: "Cars", thumb: "pexels-photo-7925479.jpeg", full: "pexels-photo-7925479.jpeg" },
+    { id: 53, title: "lamborghini black", category: "Cars", thumb: "pexels-photo-26954166.jpeg", full: "pexels-photo-26954166.jpeg" },
+    { id: 54, title: "lamborghini Purple", category: "Cars", thumb: "pexels-mohit-hambiria-92377455-17832661.jpg", full: "pexels-mohit-hambiria-92377455-17832661.jpg" },
+    { id: 55, title: "Classic Red BMW M5 ", category: "Cars", thumb: "pexels-photo-29883936.jpeg", full: "pexels-photo-29883936.jpeg" },
+    { id: 56, title: "BMW Black Sports Car", category: "Cars", thumb: "pexels-photo-35612816.jpeg", full: "pexels-photo-35612816.jpeg" },
+    { id: 57, title: " White Audi Parked on Road", category: "Cars", thumb: "pexels-photo-11960305.jpeg", full:"pexels-photo-11960305.jpeg" },
+    { id: 58, title: "Silver Mercedes-benz ", category: "Cars", thumb: "pexels-photo-241316.jpeg", full: "pexels-photo-241316.jpeg" },
+    { id: 59, title: "Blue Mercedes-AMG GT R", category: "Cars", thumb: "pexels-photo-20792557.jpeg", full: "pexels-photo-20792557.jpeg" },
+    { id: 60, title: "porsche", category: "Cars", thumb: "car.jpg", full: "car.jpg" }
+
+
+
+
+
+
+
+
+
+
 ];
+
 
 // Device Resolutions
 const DEVICE_RESOLUTIONS = {
