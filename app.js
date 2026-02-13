@@ -310,6 +310,21 @@ function initHeaderScroll() {
 }
 
 // ==================== GALLERY RENDERING ====================
+function getBaseUrl(url) {
+    return url.split('?')[0];
+}
+
+function generateSrcSet(url) {
+    const base = getBaseUrl(url);
+    // Unsplash/Pexels support dynamic resizing
+    if (base.includes('images.unsplash.com') || base.includes('images.pexels.com')) {
+        return `${base}?w=300&q=75&auto=format 300w, 
+                ${base}?w=600&q=80&auto=format 600w, 
+                ${base}?w=900&q=80&auto=format 900w`;
+    }
+    return '';
+}
+
 function renderGallery(wallpapers) {
     galleryGrid.innerHTML = '';
 
@@ -329,9 +344,25 @@ function renderGallery(wallpapers) {
         card.className = 'wallpaper-card';
         card.style.transitionDelay = `${Math.min(index * 0.05, 0.5)}s`;
 
+        // Generate srcset for responsive loading
+        // 300w for mobile (2 columns), 600w for tablet/desktop grid
+        const srcSet = generateSrcSet(wp.thumb);
+        const sizes = "(max-width: 600px) 50vw, (max-width: 1200px) 33vw, 25vw";
+        const initialSrc = wp.thumb; // Fallback
+
         card.innerHTML = `
             <div class="card-image">
-                <img src="${wp.thumb}" alt="${wp.title}" loading="lazy" decoding="async">
+                <img 
+                    src="${initialSrc}" 
+                    srcset="${srcSet}" 
+                    sizes="${sizes}" 
+                    alt="${wp.title}" 
+                    loading="lazy" 
+                    decoding="async"
+                    width="600"
+                    height="400"
+                    style="background: #111631;"
+                >
                 <div class="card-overlay">
                     <div class="overlay-top">
                         <span class="overlay-badge quality">4K</span>
@@ -689,12 +720,34 @@ window.addEventListener('scroll', () => {
 
 // ==================== IMAGE PREFETCHING ====================
 function prefetchImages() {
-    // Prefetch first 8 thumbnails for instant display
-    const first = WALLPAPERS.slice(0, 8);
-    first.forEach(wp => {
+    // 1. Critical Preload for top images (First 4 = first row)
+    // We prioritize mobile view (2 per row) -> first 4 covers top 2 rows
+    const preloadCount = 4;
+    const critical = WALLPAPERS.slice(0, preloadCount);
+    
+    critical.forEach(wp => {
+        const base = wp.thumb.split('?')[0];
+        const link = document.createElement('link');
+        link.rel = 'preload';
+        link.as = 'image';
+        
+        // Responsive preload logic
+        if (base.includes('unsplash') || base.includes('pexels')) {
+            link.href = `${base}?w=600&q=80&auto=format`;
+            link.imagesrcset = `${base}?w=300&q=75&auto=format 300w, ${base}?w=600&q=80&auto=format 600w`;
+            link.imagesizes = "(max-width: 600px) 50vw, 33vw";
+        } else {
+            link.href = wp.thumb;
+        }
+        document.head.appendChild(link);
+    });
+
+    // 2. Low-priority prefetch for next batch
+    const prefetchBatch = WALLPAPERS.slice(preloadCount, preloadCount + 8);
+    prefetchBatch.forEach(wp => {
         const link = document.createElement('link');
         link.rel = 'prefetch';
-        link.href = wp.thumb;
+        link.href = wp.thumb; // Let browser cache the default URL or handle it
         link.as = 'image';
         document.head.appendChild(link);
     });
