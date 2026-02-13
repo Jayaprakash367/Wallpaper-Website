@@ -479,6 +479,7 @@ header.scrolled {
     background-clip: text;
     background-size: 200% auto;
     animation: fadeInUp 0.7s ease-out both, gradientShift 4s linear infinite;
+    padding-bottom: 0.15em; /* Prevent descender clipping on mobile */
 }
 
 @keyframes gradientShift {
@@ -1954,19 +1955,62 @@ footer {
     .logo-text { font-size: 1.2rem; }
 
     .hero {
-        padding: 5.5rem 1rem 2rem;
+        padding: 7rem 1.5rem 2rem; /* Increased top padding and side padding */
         min-height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
-    .hero-badge { font-size: 0.7rem; padding: 6px 12px; margin-bottom: 1.25rem; }
-    .hero-title { font-size: clamp(1.75rem, 9vw, 2.5rem); letter-spacing: -0.5px; }
-    .hero-desc { font-size: 0.875rem; line-height: 1.6; }
-    .hero-actions { gap: 1rem; flex-direction: column; align-items: flex-start; }
+
+    .hero-content {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .hero-badge { 
+        font-size: 0.7rem; 
+        padding: 6px 12px; 
+        margin-bottom: 1.25rem;
+        align-self: center; 
+    }
+
+    .hero-title { 
+        font-size: clamp(2.5rem, 12vw, 3.2rem); 
+        letter-spacing: -1px; 
+        width: 100%;
+        line-height: 1.1;
+    }
+    
+    .hero-desc { 
+        font-size: 0.95rem; 
+        line-height: 1.6; 
+        margin: 0 auto 2rem;
+        max-width: 90%;
+    }
+
+    .hero-actions { 
+        gap: 1rem; 
+        flex-direction: column; 
+        align-items: center; 
+        width: 100%;
+    }
+    
     .hero-counter { display: none; }
-    .btn-primary { width: 100%; justify-content: center; padding: 0.85rem 1.5rem; }
+    
+    .btn-primary { 
+        width: 100%; 
+        max-width: 280px; /* Constrain width for better look */
+        justify-content: center; 
+        padding: 0.9rem 1.5rem; 
+    }
 
     .hero-showcase {
         gap: 1rem;
-        padding: 0 0.75rem 0.75rem;
+        padding: 1rem 0.75rem 2rem;
+        margin-top: 1rem;
     }
 
     .showcase-1,
