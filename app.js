@@ -1,10 +1,15 @@
-// Wallpaper Data - 50 Unique High-Quality Images
+// =============================================
+// WallVault — Premium Wallpaper Engine
+// Fast-loading, particle effects, aurora design
+// =============================================
+
+// ==================== DATA ====================
 const WALLPAPERS = [
     // Nature (10)
     { id: 1, title: "Mountain Sunrise", category: "nature", thumb: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80", full: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920&q=90" },
     { id: 2, title: "Forest Morning Mist", category: "nature", thumb: "https://images.unsplash.com/photo-1448375240586-882707db888b?w=600&q=80", full: "https://images.unsplash.com/photo-1448375240586-882707db888b?w=1920&q=90" },
     { id: 3, title: "Ocean Waves", category: "nature", thumb: "https://images.unsplash.com/photo-1505118380757-91f5f5632de0?w=600&q=80", full: "https://images.unsplash.com/photo-1505118380757-91f5f5632de0?w=1920&q=90" },
-    { id: 4, title: "Autumn Leaves Path", category: "nature", thumb: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80", full: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1920&q=90" },
+    { id: 4, title: "Scenic Autumn Road Surrounded by Vibrant Foliage", category: "nature", thumb: "https://images.pexels.com/photos/34490278/pexels-photo-34490278.jpeg?_gl=1*1tfg6lq*_ga*NjA0NzY1MDE5LjE3Njk4Mzc3MDk.*_ga_8JE65Q40S6*czE3NzA5OTc4MDgkbzMkZzEkdDE3NzA5OTgyNzMkajM3JGwwJGgw", full: "https://images.pexels.com/photos/34490278/pexels-photo-34490278.jpeg?_gl=1*1tfg6lq*_ga*NjA0NzY1MDE5LjE3Njk4Mzc3MDk.*_ga_8JE65Q40S6*czE3NzA5OTc4MDgkbzMkZzEkdDE3NzA5OTgyNzMkajM3JGwwJGgw" },
     { id: 5, title: "Waterfall Paradise", category: "nature", thumb: "https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?w=600&q=80", full: "https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?w=1920&q=90" },
     { id: 6, title: "Desert Dunes", category: "nature", thumb: "https://images.unsplash.com/photo-1509316785289-025f5b846b35?w=600&q=80", full: "https://images.unsplash.com/photo-1509316785289-025f5b846b35?w=1920&q=90" },
     { id: 7, title: "Northern Lights", category: "nature", thumb: "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=600&q=80", full: "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=1920&q=90" },
@@ -33,7 +38,7 @@ const WALLPAPERS = [
     { id: 26, title: "Geometric Shapes", category: "minimal", thumb: "https://images.unsplash.com/photo-1509537257950-20f875b03669?w=600&q=80", full: "https://images.unsplash.com/photo-1509537257950-20f875b03669?w=1920&q=90" },
     { id: 27, title: "Pastel Colors", category: "minimal", thumb: "https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?w=600&q=80", full: "https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?w=1920&q=90" },
     { id: 28, title: "Single Leaf", category: "minimal", thumb: "https://images.unsplash.com/photo-1470058869958-2a77ade41c02?w=600&q=80", full: "https://images.unsplash.com/photo-1470058869958-2a77ade41c02?w=1920&q=90" },
-    { id: 29, title: "Shadow Play", category: "minimal", thumb: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80", full: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1920&q=90" },
+    { id: 29, title: "White Dandelion Under Blue Sky", category: "minimal", thumb: "https://images.pexels.com/photos/14431345/pexels-photo-14431345.jpeg?_gl=1*19urmbf*_ga*NjA0NzY1MDE5LjE3Njk4Mzc3MDk.*_ga_8JE65Q40S6*czE3NzA5OTc4MDgkbzMkZzEkdDE3NzA5OTc4NzQkajU5JGwwJGgw", full: "https://images.pexels.com/photos/14431345/pexels-photo-14431345.jpeg?_gl=1*19urmbf*_ga*NjA0NzY1MDE5LjE3Njk4Mzc3MDk.*_ga_8JE65Q40S6*czE3NzA5OTc4MDgkbzMkZzEkdDE3NzA5OTc4NzQkajU5JGwwJGgw" },
     { id: 30, title: "White Architecture", category: "minimal", thumb: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=600&q=80", full: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=1920&q=90" },
 
     // Space (10)
@@ -59,108 +64,336 @@ const WALLPAPERS = [
     { id: 48, title: "Light Trails", category: "abstract", thumb: "https://images.unsplash.com/photo-1516796181074-bf453fbfa3e6?w=600&q=80", full: "https://images.unsplash.com/photo-1516796181074-bf453fbfa3e6?w=1920&q=90" },
     { id: 49, title: "Fractal Pattern", category: "abstract", thumb: "https://images.unsplash.com/photo-1550859492-d5da9d8e45f3?w=600&q=80", full: "https://images.unsplash.com/photo-1550859492-d5da9d8e45f3?w=1920&q=90" },
     { id: 50, title: "Prism Colors", category: "abstract", thumb: "https://images.unsplash.com/photo-1557672172-298e090bd0f1?w=600&q=80", full: "https://images.unsplash.com/photo-1557672172-298e090bd0f1?w=1920&q=90" },
-   
-    { id: 51, title: "lamborghini", category: "Cars", thumb: "https://images.pexels.com/photos/3802510/pexels-photo-3802510.jpeg?_gl=1*2gik0i*_ga*NjA0NzY1MDE5LjE3Njk4Mzc3MDk.*_ga_8JE65Q40S6*czE3Njk5MTk1MDkkbzIkZzEkdDE3Njk5MTk1NjYkajMkbDAkaDA.", full: "https://images.pexels.com/photos/3802510/pexels-photo-3802510.jpeg?_gl=1*2gik0i*_ga*NjA0NzY1MDE5LjE3Njk4Mzc3MDk.*_ga_8JE65Q40S6*czE3Njk5MTk1MDkkbzIkZzEkdDE3Njk5MTk1NjYkajMkbDAkaDA." },
-    { id: 52, title: "lamborghini Red ", category: "Cars", thumb: "pexels-photo-7925479.jpeg", full: "pexels-photo-7925479.jpeg" },
-    { id: 53, title: "lamborghini black", category: "Cars", thumb: "pexels-photo-26954166.jpeg", full: "pexels-photo-26954166.jpeg" },
-    { id: 54, title: "lamborghini Purple", category: "Cars", thumb: "pexels-mohit-hambiria-92377455-17832661.jpg", full: "pexels-mohit-hambiria-92377455-17832661.jpg" },
-    { id: 55, title: "Classic Red BMW M5 ", category: "Cars", thumb: "pexels-photo-29883936.jpeg", full: "pexels-photo-29883936.jpeg" },
-    { id: 56, title: "BMW Black Sports Car", category: "Cars", thumb: "pexels-photo-35612816.jpeg", full: "pexels-photo-35612816.jpeg" },
-    { id: 57, title: " White Audi Parked on Road", category: "Cars", thumb: "pexels-photo-11960305.jpeg", full:"pexels-photo-11960305.jpeg" },
-    { id: 58, title: "Silver Mercedes-benz ", category: "Cars", thumb: "pexels-photo-241316.jpeg", full: "pexels-photo-241316.jpeg" },
-    { id: 59, title: "Blue Mercedes-AMG GT R", category: "Cars", thumb: "pexels-photo-20792557.jpeg", full: "pexels-photo-20792557.jpeg" },
-    { id: 60, title: "porsche", category: "Cars", thumb: "car.jpg", full: "car.jpg" }
 
-
-
-
-
-
-
-
-
-
+    // Cars (10)
+    { id: 51, title: "Lamborghini Gold", category: "Cars", thumb: "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=600&q=80", full: "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=1920&q=90" },
+    { id: 52, title: "Lamborghini Red", category: "Cars", thumb: "https://images.unsplash.com/photo-1621135802920-133df287f89c?w=600&q=80", full: "https://images.unsplash.com/photo-1621135802920-133df287f89c?w=1920&q=90" },
+    { id: 53, title: "Lamborghini Dark", category: "Cars", thumb: "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?w=600&q=80", full: "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?w=1920&q=90" },
+    { id: 54, title: "Porsche 911 GT", category: "Cars", thumb: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=600&q=80", full: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1920&q=90" },
+    { id: 55, title: "Classic Red BMW", category: "Cars", thumb: "https://images.unsplash.com/photo-1555215695-3004980ad54e?w=600&q=80", full: "https://images.unsplash.com/photo-1555215695-3004980ad54e?w=1920&q=90" },
+    { id: 56, title: "BMW M4 Sports", category: "Cars", thumb: "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?w=600&q=80", full: "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?w=1920&q=90" },
+    { id: 57, title: "White Audi Sport", category: "Cars", thumb: "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=600&q=80", full: "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=1920&q=90" },
+    { id: 58, title: "Silver Mercedes", category: "Cars", thumb: "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=600&q=80", full: "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=1920&q=90" },
+    { id: 59, title: "Mercedes AMG GT", category: "Cars", thumb: "https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=600&q=80", full: "https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=1920&q=90" },
+    { id: 60, title: "Ferrari Supercar", category: "Cars", thumb: "https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=600&q=80", full: "https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=1920&q=90" },
 ];
 
-
-// Device Resolutions
 const DEVICE_RESOLUTIONS = {
     mobile: [
-        { label: '1179 × 2556', width: 1179, height: 2556 },
-        { label: '1080 × 1920', width: 1080, height: 1920 },
-        { label: '750 × 1334', width: 750, height: 1334 }
+        { label: 'iPhone 15 Pro Max', width: 1179, height: 2556 },
+        { label: 'Full HD Mobile', width: 1080, height: 1920 },
+        { label: 'iPhone SE', width: 750, height: 1334 },
     ],
     laptop: [
-        { label: '3456 × 2234', width: 3456, height: 2234 },
-        { label: '1920 × 1080', width: 1920, height: 1080 },
-        { label: '2560 × 1600', width: 2560, height: 1600 }
+        { label: 'MacBook Pro 16"', width: 3456, height: 2234 },
+        { label: 'Full HD 1080p', width: 1920, height: 1080 },
+        { label: 'QHD Display', width: 2560, height: 1600 },
     ],
     desktop: [
-        { label: '3840 × 2160', width: 3840, height: 2160 },
-        { label: '2560 × 1440', width: 2560, height: 1440 },
-        { label: '3440 × 1440', width: 3440, height: 1440 }
-    ]
+        { label: '4K Ultra HD', width: 3840, height: 2160 },
+        { label: '2K QHD', width: 2560, height: 1440 },
+        { label: 'Ultrawide', width: 3440, height: 1440 },
+    ],
 };
 
-// State
+// ==================== STATE ====================
 let currentFilter = 'all';
 let currentWallpaper = null;
 let currentDevice = 'laptop';
+let currentView = 'grid';
+let actualUserDevice = 'laptop'; // Detected from screen size
 
-// DOM Elements
-const galleryGrid = document.getElementById('galleryGrid');
-const previewModal = document.getElementById('previewModal');
-const previewImage = document.getElementById('previewImage');
-const modalTitle = document.getElementById('modalTitle');
-const resolutionOptions = document.getElementById('resolutionOptions');
-const visibleCount = document.getElementById('visibleCount');
-const searchInput = document.getElementById('searchInput');
-const toast = document.getElementById('toast');
-const backToTopBtn = document.getElementById('backToTop');
+// ==================== DOM ====================
+const $ = (sel) => document.querySelector(sel);
+const $$ = (sel) => document.querySelectorAll(sel);
 
-// Render Gallery
+const galleryGrid = $('#galleryGrid');
+const galleryEmpty = $('#galleryEmpty');
+const previewModal = $('#previewModal');
+const previewImage = $('#previewImage');
+const previewLoading = $('#previewLoading');
+const modalTitle = $('#modalTitle');
+const modalCategory = $('#modalCategory');
+const resolutionOptions = $('#resolutionOptions');
+const visibleCount = $('#visibleCount');
+const searchInput = $('#searchInput');
+const backToTopBtn = $('#backToTop');
+const mainHeader = $('#mainHeader');
+
+// ==================== PARTICLE SYSTEM ====================
+function initParticles() {
+    const canvas = $('#particleCanvas');
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    let particles = [];
+    let animId;
+    let w, h;
+
+    function resize() {
+        w = canvas.width = window.innerWidth;
+        h = canvas.height = window.innerHeight;
+    }
+
+    class Particle {
+        constructor() {
+            this.reset();
+        }
+        reset() {
+            this.x = Math.random() * w;
+            this.y = Math.random() * h;
+            this.size = Math.random() * 2 + 0.5;
+            this.speedX = (Math.random() - 0.5) * 0.3;
+            this.speedY = (Math.random() - 0.5) * 0.3;
+            this.opacity = Math.random() * 0.5 + 0.1;
+            this.pulse = Math.random() * Math.PI * 2;
+        }
+        update() {
+            this.x += this.speedX;
+            this.y += this.speedY;
+            this.pulse += 0.02;
+            this.opacity = 0.15 + Math.sin(this.pulse) * 0.15;
+            if (this.x < 0 || this.x > w || this.y < 0 || this.y > h) this.reset();
+        }
+        draw() {
+            ctx.beginPath();
+            ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+            ctx.fillStyle = `rgba(99, 102, 241, ${this.opacity})`;
+            ctx.fill();
+        }
+    }
+
+    function init() {
+        resize();
+        const count = Math.min(80, Math.floor((w * h) / 15000));
+        particles = Array.from({ length: count }, () => new Particle());
+    }
+
+    function connectParticles() {
+        for (let i = 0; i < particles.length; i++) {
+            for (let j = i + 1; j < particles.length; j++) {
+                const dx = particles[i].x - particles[j].x;
+                const dy = particles[i].y - particles[j].y;
+                const dist = Math.sqrt(dx * dx + dy * dy);
+                if (dist < 150) {
+                    ctx.beginPath();
+                    ctx.strokeStyle = `rgba(99, 102, 241, ${0.06 * (1 - dist / 150)})`;
+                    ctx.lineWidth = 0.5;
+                    ctx.moveTo(particles[i].x, particles[i].y);
+                    ctx.lineTo(particles[j].x, particles[j].y);
+                    ctx.stroke();
+                }
+            }
+        }
+    }
+
+    function animate() {
+        ctx.clearRect(0, 0, w, h);
+        particles.forEach(p => { p.update(); p.draw(); });
+        connectParticles();
+        animId = requestAnimationFrame(animate);
+    }
+
+    init();
+    animate();
+
+    let resizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(init, 200);
+    });
+}
+
+// ==================== CUSTOM CURSOR — Aurora Crosshair with Particle Trail ====================
+function initCursor() {
+    if (window.matchMedia('(hover: none)').matches || 'ontouchstart' in window) return;
+
+    const core = $('#cursorCore');
+    const glow = $('#cursorGlow');
+    const trailCanvas = $('#cursorTrail');
+    if (!core || !glow || !trailCanvas) return;
+
+    const ctx = trailCanvas.getContext('2d');
+    let mouseX = 0, mouseY = 0;
+    let glowX = 0, glowY = 0;
+    let trail = [];
+
+    // Resize trail canvas
+    function resizeTrail() {
+        trailCanvas.width = window.innerWidth;
+        trailCanvas.height = window.innerHeight;
+    }
+    resizeTrail();
+    window.addEventListener('resize', resizeTrail);
+
+    // Track mouse
+    document.addEventListener('mousemove', (e) => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+        core.style.transform = `translate(${mouseX - core.offsetWidth / 2}px, ${mouseY - core.offsetHeight / 2}px)`;
+
+        // Add trail particles
+        for (let i = 0; i < 2; i++) {
+            trail.push({
+                x: mouseX + (Math.random() - 0.5) * 6,
+                y: mouseY + (Math.random() - 0.5) * 6,
+                size: Math.random() * 2.5 + 1,
+                life: 1,
+                decay: Math.random() * 0.03 + 0.015,
+                vx: (Math.random() - 0.5) * 0.5,
+                vy: (Math.random() - 0.5) * 0.5,
+                hue: Math.random() > 0.5 ? 240 : 280,
+            });
+        }
+    });
+
+    // Smooth glow follow
+    function animateGlow() {
+        glowX += (mouseX - glowX) * 0.1;
+        glowY += (mouseY - glowY) * 0.1;
+        glow.style.transform = `translate(${glowX - glow.offsetWidth / 2}px, ${glowY - glow.offsetHeight / 2}px)`;
+        requestAnimationFrame(animateGlow);
+    }
+    animateGlow();
+
+    // Draw trail particles
+    function drawTrail() {
+        ctx.clearRect(0, 0, trailCanvas.width, trailCanvas.height);
+        trail = trail.filter(p => p.life > 0);
+
+        trail.forEach(p => {
+            p.x += p.vx;
+            p.y += p.vy;
+            p.life -= p.decay;
+            p.size *= 0.98;
+
+            ctx.beginPath();
+            ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+            ctx.fillStyle = `hsla(${p.hue}, 80%, 65%, ${p.life * 0.6})`;
+            ctx.fill();
+        });
+
+        // Cap array
+        if (trail.length > 200) trail.splice(0, trail.length - 200);
+
+        requestAnimationFrame(drawTrail);
+    }
+    drawTrail();
+
+    // Hover effect on interactive elements
+    const hoverTargets = 'a, button, .wallpaper-card, .category-chip, .resolution-btn, .view-btn, .social-link';
+    document.addEventListener('mouseover', (e) => {
+        if (e.target.closest(hoverTargets)) {
+            core.classList.add('hover');
+            glow.classList.add('hover');
+        }
+    });
+    document.addEventListener('mouseout', (e) => {
+        if (e.target.closest(hoverTargets)) {
+            core.classList.remove('hover');
+            glow.classList.remove('hover');
+        }
+    });
+
+    // Click pulse
+    document.addEventListener('mousedown', () => core.classList.add('click'));
+    document.addEventListener('mouseup', () => core.classList.remove('click'));
+}
+
+// ==================== HEADER SCROLL ====================
+function initHeaderScroll() {
+    let lastScroll = 0;
+    window.addEventListener('scroll', () => {
+        const scrollY = window.scrollY;
+        mainHeader.classList.toggle('scrolled', scrollY > 50);
+        lastScroll = scrollY;
+    }, { passive: true });
+}
+
+// ==================== GALLERY RENDERING ====================
 function renderGallery(wallpapers) {
     galleryGrid.innerHTML = '';
-    wallpapers.forEach(wp => {
+
+    if (wallpapers.length === 0) {
+        galleryEmpty.style.display = 'block';
+        visibleCount.textContent = '0';
+        return;
+    }
+
+    galleryEmpty.style.display = 'none';
+
+    // Use DocumentFragment for performance
+    const fragment = document.createDocumentFragment();
+
+    wallpapers.forEach((wp, index) => {
         const card = document.createElement('div');
         card.className = 'wallpaper-card';
+        card.style.transitionDelay = `${Math.min(index * 0.05, 0.5)}s`;
+
         card.innerHTML = `
             <div class="card-image">
-                <img src="${wp.thumb}" alt="${wp.title}" loading="lazy">
+                <img src="${wp.thumb}" alt="${wp.title}" loading="lazy" decoding="async">
                 <div class="card-overlay">
-                    <div class="overlay-actions">
-                        <button class="action-btn btn-preview" onclick="openPreview(${wp.id})">
-                            👁️ Preview
-                        </button>
-                        <button class="action-btn btn-download" onclick="quickDownload(${wp.id})">
-                            ⬇️ Download
-                        </button>
+                    <div class="overlay-top">
+                        <span class="overlay-badge quality">4K</span>
+                        <span class="overlay-badge">${wp.category}</span>
+                    </div>
+                    <div class="overlay-info">
+                        <h3 class="overlay-title">${wp.title}</h3>
+                        <p class="overlay-cat">${wp.category}</p>
+                        <div class="overlay-actions">
+                            <button class="action-btn btn-preview" onclick="event.stopPropagation(); openPreview(${wp.id})">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                                Preview
+                            </button>
+                            <button class="action-btn btn-download" onclick="event.stopPropagation(); quickDownload(${wp.id})">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                                Download
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="card-info">
-                <h3 class="card-title">${wp.title}</h3>
-                <div class="card-meta">
-                    <span class="card-category">${wp.category}</span>
-                    <span class="card-resolution">4K</span>
-                </div>
-            </div>
         `;
-        card.querySelector('.card-image').onclick = () => openPreview(wp.id);
-        galleryGrid.appendChild(card);
+
+        // Image load handler for shimmer effect
+        const img = card.querySelector('img');
+        const cardImage = card.querySelector('.card-image');
+        img.addEventListener('load', () => cardImage.classList.add('loaded'));
+        if (img.complete) cardImage.classList.add('loaded');
+
+        // Click to preview
+        card.addEventListener('click', () => openPreview(wp.id));
+
+        fragment.appendChild(card);
     });
+
+    galleryGrid.appendChild(fragment);
     visibleCount.textContent = wallpapers.length;
-    
-    // Reapply animations after rendering
-    setTimeout(() => {
-        applyScrollAnimations();
-        apply3DTiltEffect();
-    }, 50);
+
+    // Trigger reveal animations with IntersectionObserver
+    requestAnimationFrame(() => observeCards());
 }
 
-// Filter Wallpapers
+// ==================== SCROLL REVEAL ====================
+const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('revealed');
+            revealObserver.unobserve(entry.target);
+        }
+    });
+}, { rootMargin: '50px', threshold: 0.1 });
+
+function observeCards() {
+    $$('.wallpaper-card').forEach(card => {
+        card.classList.remove('revealed');
+        revealObserver.observe(card);
+    });
+}
+
+// ==================== FILTERING ====================
 function filterWallpapers() {
-    const searchTerm = searchInput.value.toLowerCase();
+    const searchTerm = searchInput.value.toLowerCase().trim();
     let filtered = WALLPAPERS;
 
     if (currentFilter !== 'all') {
@@ -168,7 +401,7 @@ function filterWallpapers() {
     }
 
     if (searchTerm) {
-        filtered = filtered.filter(wp => 
+        filtered = filtered.filter(wp =>
             wp.title.toLowerCase().includes(searchTerm) ||
             wp.category.toLowerCase().includes(searchTerm)
         );
@@ -177,309 +410,408 @@ function filterWallpapers() {
     renderGallery(filtered);
 }
 
-// Filter Button Handlers
-document.querySelectorAll('.filter-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        currentFilter = btn.dataset.filter;
+// Category chips
+$$('.category-chip').forEach(chip => {
+    chip.addEventListener('click', () => {
+        $$('.category-chip').forEach(c => c.classList.remove('active'));
+        chip.classList.add('active');
+        currentFilter = chip.dataset.filter;
         filterWallpapers();
     });
 });
 
+// Set "All" active by default
+document.querySelector('.category-chip[data-filter="all"]')?.classList.add('active');
+
 // Filter by category (for footer links)
 function filterByCategory(category) {
     currentFilter = category;
-    document.querySelectorAll('.filter-btn').forEach(btn => {
-        btn.classList.toggle('active', btn.dataset.filter === category);
+    $$('.category-chip').forEach(chip => {
+        chip.classList.toggle('active', chip.dataset.filter === category);
     });
     filterWallpapers();
-    window.scrollTo({ top: document.querySelector('.gallery-section').offsetTop - 150, behavior: 'smooth' });
+    document.querySelector('.gallery-section')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
-// Search Handler
-searchInput.addEventListener('input', filterWallpapers);
+// Search with debounce
+let searchTimeout;
+searchInput.addEventListener('input', () => {
+    clearTimeout(searchTimeout);
+    searchTimeout = setTimeout(filterWallpapers, 200);
+});
 
-// Open Preview Modal
+// Keyboard shortcut: Cmd/Ctrl+K to focus search
+document.addEventListener('keydown', (e) => {
+    if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+        e.preventDefault();
+        searchInput.focus();
+    }
+    if (e.key === 'Escape') {
+        if (previewModal.classList.contains('active')) {
+            closeModal();
+        } else if (document.activeElement === searchInput) {
+            searchInput.blur();
+            searchInput.value = '';
+            filterWallpapers();
+        }
+    }
+});
+
+// ==================== VIEW TOGGLE ====================
+$$('.view-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        $$('.view-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        currentView = btn.dataset.view;
+        galleryGrid.classList.toggle('masonry', currentView === 'masonry');
+        // Re-observe for animations
+        requestAnimationFrame(() => observeCards());
+    });
+});
+
+// ==================== PREVIEW MODAL ====================
 function openPreview(id) {
     currentWallpaper = WALLPAPERS.find(wp => wp.id === id);
     if (!currentWallpaper) return;
 
     modalTitle.textContent = currentWallpaper.title;
-    previewImage.src = currentWallpaper.full;
+    modalCategory.textContent = currentWallpaper.category;
+
+    // Show loading
+    previewLoading.classList.add('active');
+    previewImage.style.opacity = '0.3';
+
+    // Load full image
+    const img = new Image();
+    img.onload = () => {
+        previewImage.src = currentWallpaper.full;
+        previewImage.style.opacity = '1';
+        previewLoading.classList.remove('active');
+    };
+    img.onerror = () => {
+        previewImage.src = currentWallpaper.thumb;
+        previewImage.style.opacity = '1';
+        previewLoading.classList.remove('active');
+    };
+    img.src = currentWallpaper.full;
+
+    // Set initial thumb while loading
+    previewImage.src = currentWallpaper.thumb;
+
     updateResolutionOptions();
     previewModal.classList.add('active');
     document.body.style.overflow = 'hidden';
+    
+    // Auto-detect user's device and set appropriate tab
+    setTimeout(() => autoSelectDeviceTab(), 50);
 }
 
-// Close Modal
 function closeModal() {
     previewModal.classList.remove('active');
     document.body.style.overflow = '';
 }
 
-// Device Tab Handlers
-document.querySelectorAll('.device-tab').forEach(tab => {
+// Auto-detect user's actual device and set modal tab
+function autoSelectDeviceTab() {
+    const userDevice = detectUserDevice();
+    const deviceTab = document.querySelector(`.device-tab[data-device="${userDevice}"]`);
+    if (deviceTab) {
+        $$('.device-tab').forEach(t => t.classList.remove('active'));
+        deviceTab.classList.add('active');
+        currentDevice = userDevice;
+        updateResolutionOptions();
+    }
+}
+
+// Device tabs
+$$('.device-tab').forEach(tab => {
     tab.addEventListener('click', () => {
-        document.querySelectorAll('.device-tab').forEach(t => t.classList.remove('active'));
+        $$('.device-tab').forEach(t => t.classList.remove('active'));
         tab.classList.add('active');
         currentDevice = tab.dataset.device;
         updateResolutionOptions();
     });
 });
 
-// Update Resolution Options
 function updateResolutionOptions() {
     const resolutions = DEVICE_RESOLUTIONS[currentDevice];
-    resolutionOptions.innerHTML = resolutions.map((res, index) => `
-        <button class="resolution-btn" data-index="${index}" data-width="${res.width}" data-height="${res.height}" data-label="${res.label}">
+    resolutionOptions.innerHTML = resolutions.map(res => `
+        <button class="resolution-btn" data-width="${res.width}" data-height="${res.height}" data-label="${res.label}">
             <div class="resolution-info">
                 <span class="resolution-label">${res.label}</span>
                 <span class="resolution-size">${res.width} × ${res.height}</span>
             </div>
-            <div class="download-icon">⬇️</div>
+            <div class="download-arrow">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            </div>
         </button>
     `).join('');
-    
-    // Attach click handlers to all resolution buttons
-    document.querySelectorAll('.resolution-btn').forEach(btn => {
+
+    // Attach handlers
+    $$('.resolution-btn').forEach(btn => {
         btn.addEventListener('click', async (e) => {
             e.preventDefault();
             e.stopPropagation();
-            const width = btn.dataset.width;
-            const height = btn.dataset.height;
-            const label = btn.dataset.label;
-            await downloadWallpaper(width, height, label, btn);
+            await downloadWallpaper(
+                btn.dataset.width,
+                btn.dataset.height,
+                btn.dataset.label,
+                btn
+            );
         });
     });
 }
 
-// Download Wallpaper
+// ==================== DOWNLOAD ====================
 async function downloadWallpaper(width, height, label, btn) {
     if (!currentWallpaper) return;
 
-    const originalContent = btn.innerHTML;
-    const originalPointerEvents = btn.style.pointerEvents;
-    
-    // Disable button and show loading state
+    const originalHTML = btn.innerHTML;
     btn.style.pointerEvents = 'none';
     btn.style.opacity = '0.7';
-    btn.innerHTML = '<div class="resolution-info"><span class="resolution-label">⏳ Downloading...</span></div>';
+    btn.innerHTML = `
+        <div class="resolution-info">
+            <span class="resolution-label">Downloading...</span>
+            <span class="resolution-size">Please wait</span>
+        </div>
+        <div class="download-arrow"><div class="preview-spinner" style="width:16px;height:16px;border-width:2px;"></div></div>
+    `;
 
-    showToast(`Downloading ${label}...`);
-    
+    showToast(`Preparing ${label}...`);
+
     try {
         const imageUrl = `${currentWallpaper.full.split('?')[0]}?w=${width}&h=${height}&fit=crop&q=90`;
         const response = await fetch(imageUrl);
-        
         if (!response.ok) throw new Error('Download failed');
-        
+
         const blob = await response.blob();
-        const url = window.URL.createObjectURL(blob);
+        const url = URL.createObjectURL(blob);
         const a = document.createElement('a');
         a.href = url;
         a.download = `WallVault_${currentWallpaper.title.replace(/\s+/g, '_')}_${width}x${height}.jpg`;
         document.body.appendChild(a);
         a.click();
         document.body.removeChild(a);
-        window.URL.revokeObjectURL(url);
-        
-        // Show success
-        btn.innerHTML = '<div class="resolution-info"><span class="resolution-label">✅ Downloaded!</span></div>';
-        showToast(`✅ ${label} downloaded successfully!`, 'success');
-        
-        // Reset button after 2 seconds
+        URL.revokeObjectURL(url);
+
+        showToast(`${label} downloaded!`, 'success');
+
+        btn.innerHTML = `
+            <div class="resolution-info">
+                <span class="resolution-label">Downloaded!</span>
+                <span class="resolution-size">${width} × ${height}</span>
+            </div>
+            <div class="download-arrow">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+            </div>
+        `;
+
         setTimeout(() => {
-            btn.innerHTML = originalContent;
-            btn.style.pointerEvents = originalPointerEvents;
+            btn.innerHTML = originalHTML;
+            btn.style.pointerEvents = '';
             btn.style.opacity = '1';
         }, 2000);
-    } catch (error) {
-        console.error('Download error:', error);
-        btn.innerHTML = originalContent;
-        btn.style.pointerEvents = originalPointerEvents;
+    } catch (err) {
+        console.error('Download error:', err);
+        btn.innerHTML = originalHTML;
+        btn.style.pointerEvents = '';
         btn.style.opacity = '1';
-        showToast('❌ Download failed. Please try again.', 'error');
+        showToast('Download failed. Try again.', 'error');
     }
 }
 
-// Quick Download (from gallery)
+// Detect actual user device from screen size
+function detectUserDevice() {
+    const width = window.innerWidth;
+    if (width < 768) {
+        actualUserDevice = 'mobile';
+    } else if (width < 1024) {
+        actualUserDevice = 'laptop';
+    } else {
+        actualUserDevice = 'desktop';
+    }
+    return actualUserDevice;
+}
+
 function quickDownload(id) {
     currentWallpaper = WALLPAPERS.find(wp => wp.id === id);
-    if (currentWallpaper) {
-        const label = 'Full HD (1920×1080)';
-        showToast(`Downloading ${label}...`);
-        downloadWallpaperDirect(1920, 1080, label);
-    }
-}
-
-// Direct Download (no button state update needed)
-async function downloadWallpaperDirect(width, height, label) {
     if (!currentWallpaper) return;
     
+    // Get resolution for user's actual device
+    const userDevice = detectUserDevice();
+    const defaultResolution = DEVICE_RESOLUTIONS[userDevice][0]; // Get first (best) resolution for device
+    
+    showToast(`Preparing ${defaultResolution.label} download...`);
+    downloadWallpaperDirect(defaultResolution.width, defaultResolution.height, defaultResolution.label);
+}
+
+async function downloadWallpaperDirect(width, height, label) {
+    if (!currentWallpaper) return;
     try {
         const imageUrl = `${currentWallpaper.full.split('?')[0]}?w=${width}&h=${height}&fit=crop&q=90`;
         const response = await fetch(imageUrl);
-        
         if (!response.ok) throw new Error('Download failed');
-        
+
         const blob = await response.blob();
-        const url = window.URL.createObjectURL(blob);
+        const url = URL.createObjectURL(blob);
         const a = document.createElement('a');
         a.href = url;
         a.download = `WallVault_${currentWallpaper.title.replace(/\s+/g, '_')}_${width}x${height}.jpg`;
         document.body.appendChild(a);
         a.click();
         document.body.removeChild(a);
-        window.URL.revokeObjectURL(url);
-        
-        showToast(`✅ ${label} downloaded successfully!`, 'success');
-    } catch (error) {
-        console.error('Download error:', error);
-        showToast('❌ Download failed. Please try again.', 'error');
+        URL.revokeObjectURL(url);
+
+        showToast(`${label} downloaded!`, 'success');
+    } catch (err) {
+        console.error('Download error:', err);
+        showToast('Download failed. Try again.', 'error');
     }
 }
 
-// Show Toast
+// ==================== TOAST ====================
 function showToast(message, type = '') {
-    const toastEl = document.getElementById('toast');
-    toastEl.querySelector('.toast-message').textContent = message;
-    toastEl.className = `toast show ${type}`;
-    setTimeout(() => toastEl.classList.remove('show'), 3000);
+    const toast = $('#toast');
+    toast.querySelector('.toast-message').textContent = message;
+    toast.className = `toast show ${type}`;
+    clearTimeout(toast._timer);
+    toast._timer = setTimeout(() => toast.classList.remove('show'), 3000);
 }
 
-// Scroll to Top
+// ==================== SCROLL & BACK TO TOP ====================
 function scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
-// Loading Page Handler
-function initLoadingPage() {
-    const loadingPage = document.getElementById('loadingPage');
-    const loadingPercent = document.getElementById('loadingPercent');
-    let percentage = 0;
+window.addEventListener('scroll', () => {
+    backToTopBtn.classList.toggle('visible', window.scrollY > 600);
+}, { passive: true });
 
-    const loadingInterval = setInterval(() => {
-        percentage += Math.random() * 25;
-        if (percentage > 100) percentage = 100;
-        loadingPercent.textContent = Math.floor(percentage) + '%';
-
-        if (percentage >= 100) {
-            clearInterval(loadingInterval);
-            setTimeout(() => {
-                loadingPage.classList.add('hidden');
-            }, 300);
-        }
-    }, 300);
-
-    // Force hide after 5 seconds
-    setTimeout(() => {
-        percentage = 100;
-        loadingPercent.textContent = '100%';
-        clearInterval(loadingInterval);
-        loadingPage.classList.add('hidden');
-    }, 5000);
+// ==================== IMAGE PREFETCHING ====================
+function prefetchImages() {
+    // Prefetch first 8 thumbnails for instant display
+    const first = WALLPAPERS.slice(0, 8);
+    first.forEach(wp => {
+        const link = document.createElement('link');
+        link.rel = 'prefetch';
+        link.href = wp.thumb;
+        link.as = 'image';
+        document.head.appendChild(link);
+    });
 }
 
-// Scroll Handler
-window.addEventListener('scroll', () => {
-    backToTopBtn.classList.toggle('visible', window.scrollY > 500);
+// ==================== INITIALIZE ====================
+document.addEventListener('DOMContentLoaded', () => {
+    // Detect user's actual device
+    detectUserDevice();
+    
+    // Update device detection on window resize
+    window.addEventListener('resize', detectUserDevice);
+    
+    initCursor();
+    initParticles();
+    initHeaderScroll();
+    initMobileMenu();
+    initModalSwipe();
+    prefetchImages();
+    renderGallery(WALLPAPERS);
 });
 
-// Advanced Scroll Animations with Intersection Observer
-const observerOptions = {
-    root: null,
-    rootMargin: '0px',
-    threshold: 0.15
-};
+// ==================== MOBILE MENU ====================
+function initMobileMenu() {
+    const menuBtn = $('#mobileMenuBtn');
+    const menu = $('#mobileMenu');
+    const closeBtn = $('#mobileMenuClose');
+    const backdrop = $('#mobileMenuBackdrop');
+    if (!menuBtn || !menu) return;
 
-const scrollObserver = new IntersectionObserver((entries) => {
-    entries.forEach((entry, index) => {
-        if (entry.isIntersecting) {
-            const card = entry.target;
-            const delay = index * 0.08;
-            card.style.transitionDelay = `${delay}s`;
-            card.classList.add('scroll-reveal');
-            scrollObserver.unobserve(card);
+    function openMenu() {
+        menu.classList.add('active');
+        menuBtn.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeMenu() {
+        menu.classList.remove('active');
+        menuBtn.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    menuBtn.addEventListener('click', () => {
+        menu.classList.contains('active') ? closeMenu() : openMenu();
+    });
+
+    closeBtn?.addEventListener('click', closeMenu);
+    backdrop?.addEventListener('click', closeMenu);
+
+    // Close on nav link click
+    $$('.mobile-nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+            closeMenu();
+        });
+    });
+
+    // Close on Escape
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && menu.classList.contains('active')) closeMenu();
+    });
+
+    // Swipe right to close
+    let touchStartX = 0;
+    menu.addEventListener('touchstart', (e) => {
+        touchStartX = e.touches[0].clientX;
+    }, { passive: true });
+
+    menu.addEventListener('touchend', (e) => {
+        const diff = e.changedTouches[0].clientX - touchStartX;
+        if (diff > 80) closeMenu();
+    }, { passive: true });
+}
+
+// ==================== MODAL SWIPE TO CLOSE (Mobile) ====================
+function initModalSwipe() {
+    const modal = previewModal;
+    const content = modal?.querySelector('.modal-content');
+    if (!modal || !content) return;
+
+    let startY = 0;
+    let currentY = 0;
+    let isDragging = false;
+
+    const handle = modal.querySelector('.modal-swipe-handle');
+    if (!handle) return;
+
+    handle.addEventListener('touchstart', (e) => {
+        startY = e.touches[0].clientY;
+        isDragging = true;
+        content.style.transition = 'none';
+    }, { passive: true });
+
+    handle.addEventListener('touchmove', (e) => {
+        if (!isDragging) return;
+        currentY = e.touches[0].clientY;
+        const diff = currentY - startY;
+        if (diff > 0) {
+            content.style.transform = `translateY(${diff}px)`;
+            content.style.opacity = `${1 - diff / 400}`;
         }
-    });
-}, observerOptions);
+    }, { passive: true });
 
-// Apply scroll observation to cards after render
-function applyScrollAnimations() {
-    const cards = document.querySelectorAll('.wallpaper-card');
-    cards.forEach((card, index) => {
-        card.classList.remove('scroll-reveal');
-        card.style.opacity = '0';
-        card.style.transform = 'translateY(80px) rotateX(20deg) scale(0.85)';
-        scrollObserver.observe(card);
-    });
+    handle.addEventListener('touchend', () => {
+        if (!isDragging) return;
+        isDragging = false;
+        const diff = currentY - startY;
+        content.style.transition = '';
+
+        if (diff > 120) {
+            closeModal();
+        }
+        content.style.transform = '';
+        content.style.opacity = '';
+    }, { passive: true });
 }
 
-// 3D Tilt Effect on Mouse Move
-function apply3DTiltEffect() {
-    const cards = document.querySelectorAll('.wallpaper-card');
-    
-    cards.forEach(card => {
-        card.addEventListener('mousemove', (e) => {
-            const rect = card.getBoundingClientRect();
-            const x = e.clientX - rect.left;
-            const y = e.clientY - rect.top;
-            const centerX = rect.width / 2;
-            const centerY = rect.height / 2;
-            
-            const rotateX = ((y - centerY) / centerY) * -8;
-            const rotateY = ((x - centerX) / centerX) * 8;
-            
-            card.style.transform = `translateY(-20px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.03)`;
-        });
-        
-        card.addEventListener('mouseleave', () => {
-            card.style.transform = 'translateY(0) rotateX(0) rotateY(0) scale(1)';
-            card.style.transition = 'all 0.6s cubic-bezier(0.23, 1, 0.32, 1)';
-        });
-    });
-}
-
-// Parallax effect on scroll
-function applyParallaxEffect() {
-    const cards = document.querySelectorAll('.wallpaper-card');
-    
-    window.addEventListener('scroll', () => {
-        const scrollY = window.scrollY;
-        
-        cards.forEach((card, index) => {
-            const rect = card.getBoundingClientRect();
-            const cardCenter = rect.top + rect.height / 2;
-            const viewportCenter = window.innerHeight / 2;
-            const distance = (cardCenter - viewportCenter) / viewportCenter;
-            
-            const img = card.querySelector('.card-image img');
-            if (img && rect.top < window.innerHeight && rect.bottom > 0) {
-                const parallaxOffset = distance * 15;
-                img.style.transform = `scale(1.05) translateY(${parallaxOffset}px)`;
-            }
-        });
-    });
-}
-
-// Close modal on outside click
+// Close modal on backdrop click or Escape
 previewModal.addEventListener('click', (e) => {
     if (e.target === previewModal) closeModal();
 });
-
-// Close modal on Escape key
-document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') closeModal();
-});
-
-// Initialize
-renderGallery(WALLPAPERS);
-initLoadingPage();
-
-// Apply advanced animations after DOM is ready
-setTimeout(() => {
-    applyScrollAnimations();
-    apply3DTiltEffect();
-    applyParallaxEffect();
-}, 100);
